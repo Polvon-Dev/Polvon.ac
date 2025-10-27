@@ -1,6 +1,11 @@
-<aside class="flex h-full flex-col justify-between">
-  <div>
-    <h3 class="mb-4 p-2 font-premium">Sahifalar</h3>
+<aside
+  [class.w-8]="collapsed()"
+  class="flex h-full w-60 flex-col transition-all duration-500 transform sidebar justify-between"
+>
+  <div [class.mt-0]="!collapsed()" [class.-mt-1]="collapsed()" class="">
+    <h3 *ngIf="!collapsed()" class="mb-4 p-2 transition-all duration-500 font-premium">
+      Sahifalar
+    </h3>
 
     <nav class="flex flex-col gap-2">
       <a
@@ -9,8 +14,19 @@
         [routerLinkActiveOptions]="{ exact: true }"
         class="flex items-center gap-2 hover:bg-gray-800 rounded-md p-2 font-normal text-md"
       >
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-        <span>Bosh sahifa</span>
+        <mat-icon
+          class="mr-0"
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="home"
+        ></mat-icon>
+        <span
+          class="transition-all duration-300"
+          [class.opacity-0]="collapsed()"
+          [class.opacity-100]="!collapsed()"
+          *ngIf="!collapsed()"
+          >Bosh sahifa</span
+        >
       </a>
       <a
         routerLink="/courses"
@@ -18,7 +34,13 @@
         class="flex items-center gap-4 hover:bg-gray-800 rounded-md p-2 font-normal text-md"
       >
         <i class="bi bi-braces"></i>
-        <span>Kurslar</span>
+        <span
+          class="transition-all duration-300"
+          [class.opacity-0]="collapsed()"
+          [class.opacity-100]="!collapsed()"
+          *ngIf="!collapsed()"
+          >Kurslar</span
+        >
       </a>
 
       <a
@@ -27,7 +49,13 @@
         class="flex items-center gap-4 hover:bg-gray-800 rounded-md p-2 font-normal text-md"
       >
         <i class="bi bi-chevron-right"></i>
-        <span>Loyihalar</span>
+        <span
+          class="transition-all duration-300"
+          [class.opacity-0]="collapsed()"
+          [class.opacity-100]="!collapsed()"
+          *ngIf="!collapsed()"
+          >Loyihalar</span
+        >
       </a>
 
       <a
@@ -36,7 +64,13 @@
         class="flex items-center gap-4 hover:bg-gray-800 rounded-md p-2 font-normal text-md"
       >
         <i class="bi bi-bug"></i>
-        <span>Kod manbalari</span>
+        <span
+          class="transition-all duration-300"
+          [class.opacity-0]="collapsed()"
+          [class.opacity-100]="!collapsed()"
+          *ngIf="!collapsed()"
+          >Kod manbalari</span
+        >
       </a>
 
       <a
@@ -45,11 +79,17 @@
         class="flex items-center gap-4 hover:bg-gray-800 rounded-md p-2 font-normal text-md"
       >
         <i class="bi bi-speedometer"></i>
-        <span>Dashboard</span>
+        <span
+          class="transition-all duration-300"
+          [class.opacity-0]="collapsed()"
+          [class.opacity-100]="!collapsed()"
+          *ngIf="!collapsed()"
+          >Dashboard</span
+        >
       </a>
     </nav>
   </div>
-  <footer class="p-2 border-t">
+  <footer *ngIf="!collapsed()" class="p-2 border-t">
     <div class="flex justify-center gap-4">
       <a href="https://t.me/Abdirimov_P" target="_blank" aria-label="Telegram">
         <i class="bi bi-telegram text-lg"></i>
