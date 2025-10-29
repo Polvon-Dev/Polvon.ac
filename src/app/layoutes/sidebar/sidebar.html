@@ -1,0 +1,111 @@
+<aside
+  [class.w-60]="!collapsed()"
+  class="flex h-full flex-col transition-all duration-500 transform"
+>
+  <div
+    class="flex h-full flex-col transition-all duration-500 transform justify-between"
+    [class.w-8]="collapsed()"
+  >
+    <div [class.mt-0]="!collapsed()" [class.-mt-1]="collapsed()" class="">
+      <h3 *ngIf="!collapsed()" class="mb-4 p-2 transition-all duration-500 font-premium">
+        Sahifalar
+      </h3>
+
+      <nav class="flex flex-col gap-2">
+        <a
+          routerLink=""
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="flex items-center gap-2 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-house-door"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Bosh sahifa</span
+          >
+        </a>
+        <a
+          routerLink="/courses"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-braces"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Kurslar</span
+          >
+        </a>
+
+        <a
+          routerLink="/projects"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-chevron-right"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Loyihalar</span
+          >
+        </a>
+
+        <a
+          routerLink="/coding"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-bug"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Kod manbalari</span
+          >
+        </a>
+
+        <a
+          routerLink="/dashboard"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-speedometer"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Dashboard</span
+          >
+        </a>
+      </nav>
+    </div>
+    <footer *ngIf="!collapsed()" class="p-2 border-t">
+      <div class="flex justify-center gap-4">
+        <a href="https://t.me/Abdirimov_P" target="_blank" aria-label="Telegram">
+          <i class="bi bi-telegram text-lg"></i>
+        </a>
+        <a href="https://instagram.com/Polvonb0y" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram text-lg"></i>
+        </a>
+        <a target="_blank" href="https://youtube.com/@PolvonboyAbdirimov">
+          <i class="bi bi-youtube text-lg"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/PolvonboyAbdirimov">
+          <i class="bi bi-linkedin text-lg"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Polvon-Dev">
+          <i class="bi bi-github text-lg"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+</aside>

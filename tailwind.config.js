@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: 'class', // <-- shu qatorda 'class' bo‘lishi kerak
+  darkMode: 'class', // muhim! 'media' emas!
   content: ['./src/**/*.{html,ts}'],
   theme: {
     extend: {},

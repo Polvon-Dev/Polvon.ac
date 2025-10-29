@@ -1,0 +1,13 @@
+<div
+  class="flex min-h-screen bg-white dark:bg-black text-black dark:text-white pl-3 pt-2 pb-2 pr-3"
+>
+  <app-sidebar
+    class="rounded-md mr-1 dark:border-none border-2 dark:bg-gray-900 text-black bg-white dark:text-white px-3 pt-4"
+  ></app-sidebar>
+  <div class="flex-1">
+    <app-header class="sticky top-0 z-50"></app-header>
+    <main class="p-4 mx-auto dark:bg-black text-black bg-white dark:text-white">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

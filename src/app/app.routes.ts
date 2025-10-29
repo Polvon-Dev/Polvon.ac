@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
-import { MainLayout } from './core/layouts/main-layout/main-layout';
+import { MainLayout } from './layoutes/main-layout/main-layout';
 import { Home } from './pages/home/home';
 import { Courses } from './pages/courses/courses';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { Projects } from './pages/projects/projects';
 import { Coding } from './pages/coding/coding';
+import { ContactUs } from './pages/contact-us/contact-us';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,7 @@ export const routes: Routes = [
       { path: 'projects', component: Projects },
       { path: 'coding', component: Coding },
       { path: 'dashboard', component: Dashboard },
+      { path: 'contactUs', component: ContactUs },
     ],
   },
 ];

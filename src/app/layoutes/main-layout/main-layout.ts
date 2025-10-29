@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Sidebar } from '../../sidebar/sidebar';
-import { Header } from '../../header/header';
+import { Header } from '../layouts/header/header';
 import { RouterOutlet } from '@angular/router';
+import { Sidebar } from '../sidebar/sidebar';
 
 @Component({
   selector: 'app-main-layout',

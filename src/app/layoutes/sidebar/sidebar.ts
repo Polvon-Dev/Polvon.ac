@@ -2,7 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { LayoutService } from '../layout.service';
+import { LayoutService } from '../../core/layout.service';
 
 @Component({
   selector: 'app-sidebar',
