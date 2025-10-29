@@ -10,7 +10,10 @@
 
   <div>
     <ul class="flex gap-4">
-      <button (click)="toggle()">
+      <div class="md:hidden p-2 flex items-center justify-between">
+        <button (click)="onToggleSidebar()" class="text-white text-lg">☰</button>
+      </div>
+      <button class="hidden md:block" (click)="toggle()">
         <i class="bi bi-layout-sidebar"></i>
       </button>
       <button (click)="toggleTheme()">
