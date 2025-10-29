@@ -1,14 +1,15 @@
 <div
-  class="flex min-h-screen bg-white dark:bg-black text-black dark:text-white pl-3 pt-2 pb-2 pr-3"
+  class="flex h-100vh min-h-screen bg-white dark:bg-black text-black dark:text-white pl-3 pt-2 pb-2 pr-3"
 >
   <app-sidebar
     [class.translate-x-0]="isSidebarOpen"
+    [class.z-50]="isSidebarOpen"
     [class.-translate-x-full]="!isSidebarOpen"
     class="rounded-md mr-1 hidden md:block dark:border-none border-2 dark:bg-gray-900 text-black bg-white dark:text-white px-3 pt-4"
   ></app-sidebar>
   <div class="flex-1">
     <app-header class="sticky top-0 z-50"></app-header>
-    <main class="p-4 mx-auto dark:bg-black text-black bg-white dark:text-white">
+    <main class="p-4 mx-auto dark:bg-black z-30 text-black bg-white dark:text-white">
       <router-outlet></router-outlet>
     </main>
   </div>
