@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { Header } from '../layouts/header/header';
+import { Header } from '../header/header';
 import { RouterOutlet } from '@angular/router';
 import { Sidebar } from '../sidebar/sidebar';
-import { selectHeader } from '../layouts/header/header.selector';
+import { selectHeader } from '../header/header.selector';
 import { Store } from '@ngrx/store';
-import { toggleSidebar } from '../layouts/header/header.actions';
+import { toggleSidebar } from '../header/header.actions';
 import { CommonModule } from '@angular/common';
 
 @Component({

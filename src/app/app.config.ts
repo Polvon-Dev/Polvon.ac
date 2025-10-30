@@ -10,7 +10,7 @@ import { routes } from './app.routes';
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { headerReducer } from './layoutes/layouts/header/header.reducer';
+import { headerReducer } from './layoutes/header/header.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [

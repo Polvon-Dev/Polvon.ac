@@ -6,6 +6,8 @@ import { Dashboard } from './pages/dashboard/dashboard';
 import { Projects } from './pages/projects/projects';
 import { Coding } from './pages/coding/coding';
 import { ContactUs } from './pages/contact-us/contact-us';
+import { Login } from './pages/auth/login/login';
+import { Register } from './pages/auth/register/register';
 
 export const routes: Routes = [
   {
@@ -18,6 +20,8 @@ export const routes: Routes = [
       { path: 'coding', component: Coding },
       { path: 'dashboard', component: Dashboard },
       { path: 'contactUs', component: ContactUs },
+      { path: 'login', component: Login },
+      { path: 'register', component: Register },
     ],
   },
 ];

@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { LayoutService } from '../../../core/layout.service';
+import { LayoutService } from '../../core/layout.service';
 import { CommonModule } from '@angular/common';
-import { ThemeService } from '../../../core/theme.service';
+import { ThemeService } from '../../core/theme.service';
 import { RouterLink } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { selectHeader } from './header.selector';
