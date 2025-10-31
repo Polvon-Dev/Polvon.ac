@@ -1,6 +1,6 @@
 import { AuthService } from './../auth-service';
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { select } from '@ngrx/store';
 
@@ -13,6 +13,8 @@ import { select } from '@ngrx/store';
 export class Login implements OnInit {
   savedArr: any[] = [];
   loginArr: any[] = [];
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     const saved = localStorage.getItem('signUpUsers');
@@ -28,7 +30,8 @@ export class Login implements OnInit {
 
     const isUser = this.savedArr.find(({ email }) => email == newLoginArr.email);
     if (isUser) {
-      alert("Siz ro'yhatda mofaqiyatli o'tdingiz");
+      this.router.navigate(['']);
+      localStorage.setItem('isUser', JSON.stringify(this.loginObj));
     } else {
       alert("Noto'g'ri email");
     }

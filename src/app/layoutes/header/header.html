@@ -27,12 +27,17 @@
         </a>
       </button>
 
-      <button class="dark:bg-gray-800 bg-slate-100 p-1 px-3 rounded-md">
-        <a class="flex gap-2" routerLink="/login">
-          <h3>kirish</h3>
-          <i class="bi bi-box-arrow-in-right"></i>
-        </a>
-      </button>
+      <div>
+        <p *ngIf="users; else guest">P</p>
+        <ng-template #guest>
+          <button class="dark:bg-gray-800 bg-slate-100 p-1 px-3 rounded-md">
+            <a class="flex gap-2" routerLink="/login">
+              <h3>kirish</h3>
+              <i class="bi bi-box-arrow-in-right"></i>
+            </a>
+          </button>
+        </ng-template>
+      </div>
     </ul>
   </div>
 </header>

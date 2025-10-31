@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { LayoutService } from '../../core/layout.service';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../../core/theme.service';
-import { RouterLink } from '@angular/router';
+import { RouterLink, ɵEmptyOutletComponent } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { selectHeader } from './header.selector';
 import { toggleSidebar } from './header.actions';
@@ -10,17 +10,17 @@ import { toggleSidebar } from './header.actions';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, ɵEmptyOutletComponent],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })
 export class Header implements OnInit {
+  users: any = {};
   private store = inject(Store);
   isSidebarOpen = this.store.selectSignal(selectHeader);
   theme: 'light' | 'dark' = 'light';
 
   onToggleSidebar() {
-    console.log('Sidebar toggled!');
     this.store.dispatch(toggleSidebar());
   }
 
@@ -28,6 +28,9 @@ export class Header implements OnInit {
   ngOnInit(): void {
     this.themeService.loadTheme();
     this.theme = this.themeService.theme;
+    let localeUsers = localStorage.getItem('isUser');
+    let user = JSON.parse(localeUsers || '{}');
+    this.users = user;
   }
 
   toggleTheme() {
@@ -40,4 +43,6 @@ export class Header implements OnInit {
   toggle() {
     this.layout.toggleSidebar();
   }
+
+  login() {}
 }
