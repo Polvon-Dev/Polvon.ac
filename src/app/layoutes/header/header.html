@@ -1,5 +1,5 @@
 <header
-  class="flex justify-between dark:bg-gray-900 dark:border-none border-2 text-black bg-white dark:text-white h-24 rounded-md items-center p-4 ml-1"
+  class="flex overflow-visible justify-between dark:bg-gray-900 dark:border-none border-2 text-black bg-white dark:text-white h-24 rounded-md items-center p-4 ml-1"
 >
   <div>
     <a class="flex gap-2 items-center" href="">
@@ -27,16 +27,35 @@
         </a>
       </button>
 
-      <div>
-        <p *ngIf="users; else guest">P</p>
-        <ng-template #guest>
-          <button class="dark:bg-gray-800 bg-slate-100 p-1 px-3 rounded-md">
-            <a class="flex gap-2" routerLink="/login">
-              <h3>kirish</h3>
-              <i class="bi bi-box-arrow-in-right"></i>
-            </a>
+      <div class="relative">
+        @if(users&&users.email) {
+
+        <button
+          (click)="toggleLogout()"
+          class="bg-green-700 text-white flex justify-center items-center rounded-full w-6 h-6 p-1"
+        >
+          {{ users.email.toUpperCase()[0] }}
+        </button>
+
+        @if(showLogOut){
+        <div
+          class="absolute z-50 right-0 mt-6 bg-white shadow-2xl dark:bg-gray-800 border rounded-md dark:border-x-gray-700"
+        >
+          <button
+            (click)="logOut()"
+            class="block w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            Chiqish
           </button>
-        </ng-template>
+        </div>
+        } } @else {
+        <button class="dark:bg-gray-800 bg-slate-100 p-1 px-3 rounded-md">
+          <a class="flex gap-2" routerLink="/login">
+            <h3>kirish</h3>
+            <i class="bi bi-box-arrow-in-right"></i>
+          </a>
+        </button>
+        }
       </div>
     </ul>
   </div>

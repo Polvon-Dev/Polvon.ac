@@ -30,8 +30,9 @@ export class Login implements OnInit {
 
     const isUser = this.savedArr.find(({ email }) => email == newLoginArr.email);
     if (isUser) {
-      this.router.navigate(['']);
       localStorage.setItem('isUser', JSON.stringify(this.loginObj));
+      window.location.reload();
+      this.router.navigate(['']);
     } else {
       alert("Noto'g'ri email");
     }

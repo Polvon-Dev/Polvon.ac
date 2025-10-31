@@ -1,3 +1,43 @@
 <div class="max-w-[94%] p-4 mx-auto">
-  <h2>Home page</h2>
+  <div
+    class="rounded-xl h-64 flex justify-between items-center pl-12 pr-12 bg-gray-900 border-gray-600 shadow-md"
+  >
+    <div class="flex flex-col gap-1">
+      <h1 class="text-2xl font-semibold">Sammi - dasturlash kurslari</h1>
+      <p class="text-gray-400">
+        Sammi - bu sizga dasturlashni o'rganishda yordam beradigan platforma. Pullik darslardagi
+        <br />
+        'lumotlarni bepul olishingiz mumkin. Barchasi bir joyda!
+      </p>
+      <div class="flex gap-8 mt-6">
+        <button
+          (click)="onClickCourses()"
+          class="dark:bg-white p-2 bg-gray-900 w-28 text-white rounded-2xl dark:text-black"
+        >
+          Kurslar
+        </button>
+        <button
+          (click)="onClickProjects()"
+          class="p-2 bg-gray-800 w-28 text-white dark:bg-gray-800 rounded-2xl dark:text-white"
+        >
+          Loyihalar
+        </button>
+      </div>
+    </div>
+    <div>
+      <img
+        src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000a8c461f59894610419b0ec8e&ts=489429&p=fs&cid=1&sig=4fb7b81ff035f78f214ab3cc83a0975ac50e56f173c23f5e564837eae55d8fd2&v=0"
+        alt="react"
+      />
+    </div>
+  </div>
+
+  <h1 class="text-3xl mt-8 mb-8">Kurslar</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div *ngFor="let item of courses" class="rounded-md shadow-md">
+      <img class="rounded-sm w-full h-56 object-cover" [src]="item.thumbnail" [alt]="item.title" />
+      <h3 class="text-lg font-medium h-12 flex items-center bg-gray-900 pl-2">{{ item.title }}</h3>
+    </div>
+  </div>
 </div>

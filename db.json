@@ -1,0 +1,182 @@
+{
+  "courses": [
+    {
+      "id": "javascript",
+      "title": "JavaScript",
+      "thumbnail": "https://www.sammi.ac/_next/image?dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw&q=75&url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo01pCyzWVJWIAxq9EjKgNoL7zftvlDbOmru0H2&w=3840",
+      "students": 12520,
+      "publishedDate": "2025-03-11",
+      "lessons": 43,
+      "duration": "15 soat 37 daqiqa",
+      "rating": 5,
+      "reviewsCount": 179,
+      "price": "Bepul / 250 000 UZS",
+      "description": "Eng mashhur dasturlash tillaridan biri hisoblangan JavaScript — amaliy loyihalar bilan to‘liq o‘rganish.",
+      "modules": [
+        {
+          "moduleTitle": "JavaScript asoslari",
+          "lessonsCount": 20,
+          "duration": "7 soat 21 daqiqa"
+        },
+        { "moduleTitle": "JavaScript loyiha", "lessonsCount": 11, "duration": "3 soat 23 daqiqa" },
+        { "moduleTitle": "Murakkab terminlar", "lessonsCount": 12, "duration": "4 soat 53 daqiqa" },
+        { "moduleTitle": "Paint loyihasi", "lessonsCount": 12, "duration": "1 soat 40 daqiqa" }
+      ]
+    },
+    {
+      "id": "node-express",
+      "title": "NodeJS & ExpressJS",
+      "thumbnail": "https://www.sammi.ac/_next/image?dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw&q=75&url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0Dt6eWDpQTl9a4CLgOmnEFkfdiNbwx068Xc3o&w=3840",
+      "students": 3963,
+      "publishedDate": "2025-03-11",
+      "lessons": 75,
+      "duration": "18 soat 31 daqiqa",
+      "rating": 5,
+      "reviewsCount": 54,
+      "price": "Bepul / 250 000 UZS",
+      "description": "NodeJS ni o‘rnatishdan tortib, tugallangan dasturni serverda joylashtirishgacha bo‘lgan asosiy ma’lumotlar.",
+      "modules": [
+        { "moduleTitle": "NodeJS asoslari", "lessonsCount": 16, "duration": "2 soat 37 daqiqa" },
+        { "moduleTitle": "CLI - Ob-Havo", "lessonsCount": 10, "duration": "2 soat 09 daqiqa" },
+        { "moduleTitle": "Express JS", "lessonsCount": 7, "duration": "2 soat 29 daqiqa" },
+        { "moduleTitle": "Murakkab mavzular", "lessonsCount": 6, "duration": "2 soat 18 daqiqa" },
+        { "moduleTitle": "MERN Stack loyiha", "lessonsCount": 6, "duration": "3 soat 28 daqiqa" },
+        { "moduleTitle": "ExpressJS loyiha", "lessonsCount": 30, "duration": "5 soat 30 daqiqa" }
+      ]
+    },
+    {
+      "id": "nestjs",
+      "title": "Nest JS",
+      "thumbnail": "https://www.sammi.ac/_next/image?dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw&q=75&url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0WO04xMuv70rfVnCNDiebGQXS2lh4oIUJ8tdw&w=3840",
+      "students": 1334,
+      "publishedDate": "2025-03-11",
+      "lessons": 16,
+      "duration": "3 soat 53 daqiqa",
+      "rating": 5,
+      "reviewsCount": 11,
+      "price": "Bepul / 250 000 UZS",
+      "description": "Backend olamidagi mashhur frameworklardan biri NestJS — amaliy loyihalar bilan.",
+      "modules": [
+        { "moduleTitle": "Nest JS asoslari", "lessonsCount": 10, "duration": "2 soat 01 daqiqa" },
+        { "moduleTitle": "MERN Stack loyiha", "lessonsCount": 6, "duration": "1 soat 52 daqiqa" }
+      ]
+    },
+    {
+      "id": "react",
+      "title": "React JS",
+      "thumbnail": "https://www.sammi.ac/_next/image?dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw&q=75&url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=3840",
+      "students": 9820,
+      "publishedDate": "2025-04-02",
+      "lessons": 65,
+      "duration": "14 soat 42 daqiqa",
+      "rating": 5,
+      "reviewsCount": 212,
+      "price": "Bepul / 300 000 UZS",
+      "description": "Frontend dunyosida eng mashhur kutubxona — React JS bilan amaliy loyihalar yaratish.",
+      "modules": [
+        { "moduleTitle": "React asoslari", "lessonsCount": 22, "duration": "5 soat 30 daqiqa" },
+        { "moduleTitle": "Hooks", "lessonsCount": 15, "duration": "3 soat 00 daqiqa" },
+        { "moduleTitle": "Routing & Context", "lessonsCount": 10, "duration": "2 soat 10 daqiqa" },
+        { "moduleTitle": "React Loyihasi", "lessonsCount": 18, "duration": "4 soat 02 daqiqa" }
+      ]
+    },
+    {
+      "id": "typescript",
+      "title": "TypeScript",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0E5lF6amAU8kioLXqN3YRt4exAMZ2yFscwGIl&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "students": 2571,
+      "publishedDate": "2025-04-10",
+      "lessons": 28,
+      "duration": "8 soat 09 daqiqa",
+      "rating": 5,
+      "reviewsCount": 48,
+      "price": "Bepul / 180 000 UZS",
+      "description": "JavaScript’ning yanada xavfsizroq tili — TypeScript ni o‘rganing va professional kod yozishni boshlang.",
+      "modules": [
+        { "moduleTitle": "TS asoslari", "lessonsCount": 10, "duration": "3 soat 00 daqiqa" },
+        { "moduleTitle": "Advanced Types", "lessonsCount": 8, "duration": "2 soat 30 daqiqa" },
+        { "moduleTitle": "TS bilan React", "lessonsCount": 10, "duration": "2 soat 39 daqiqa" }
+      ]
+    },
+    {
+      "id": "angular",
+      "title": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw&q=75&url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj&w=3840",
+      "students": 5140,
+      "publishedDate": "2025-05-01",
+      "lessons": 55,
+      "duration": "16 soat 18 daqiqa",
+      "rating": 5,
+      "reviewsCount": 94,
+      "price": "Bepul / 350 000 UZS",
+      "description": "Angular — kuchli frontend framework. Amaliy loyihalar bilan modul, service, va routing asoslarini o‘rganing.",
+      "modules": [
+        { "moduleTitle": "Angular asoslari", "lessonsCount": 20, "duration": "6 soat 30 daqiqa" },
+        {
+          "moduleTitle": "Component va Template",
+          "lessonsCount": 15,
+          "duration": "4 soat 00 daqiqa"
+        },
+        { "moduleTitle": "Routing & Service", "lessonsCount": 20, "duration": "5 soat 48 daqiqa" }
+      ]
+    },
+    {
+      "id": "nextjs",
+      "title": "Next JS",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo041nrlbd9utCZemPzyoJSOTAbr18IvF0MYQ6H&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "students": 2300,
+      "publishedDate": "2025-05-11",
+      "lessons": 40,
+      "duration": "9 soat 55 daqiqa",
+      "rating": 5,
+      "reviewsCount": 67,
+      "price": "Bepul / 280 000 UZS",
+      "description": "Next.js — React asosida yaratilgan zamonaviy framework. SEO va SSR bilan ishlashni o‘rganing.",
+      "modules": [
+        { "moduleTitle": "NextJS asoslari", "lessonsCount": 18, "duration": "4 soat 12 daqiqa" },
+        { "moduleTitle": "Dynamic Routing", "lessonsCount": 10, "duration": "2 soat 00 daqiqa" },
+        { "moduleTitle": "API Routes", "lessonsCount": 12, "duration": "3 soat 43 daqiqa" }
+      ]
+    },
+
+    {
+      "id": "html-css",
+      "title": "HTML & CSS",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0WO04xMuv70rfVnCNDiebGQXS2lh4oIUJ8tdw&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "students": 19200,
+      "publishedDate": "2025-01-15",
+      "lessons": 35,
+      "duration": "10 soat 30 daqiqa",
+      "rating": 5,
+      "reviewsCount": 205,
+      "price": "Bepul / 150 000 UZS",
+      "description": "Frontend asoslari — HTML va CSS bilan saytlarga hayot baxsh eting.",
+      "modules": [
+        { "moduleTitle": "HTML asoslari", "lessonsCount": 15, "duration": "4 soat 00 daqiqa" },
+        { "moduleTitle": "CSS asoslari", "lessonsCount": 20, "duration": "6 soat 30 daqiqa" }
+      ]
+    },
+    {
+      "id": "vuejs",
+      "title": "Vue JS",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0pJtmiWIV0jo2XA16Ydy4rSfwLIiRxv98gOuk&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "students": 2875,
+      "publishedDate": "2025-07-01",
+      "lessons": 30,
+      "duration": "8 soat 40 daqiqa",
+      "rating": 5,
+      "reviewsCount": 45,
+      "price": "Bepul / 220 000 UZS",
+      "description": "VueJS — yengil va qulay frontend framework. Asosiy konseptlar va real loyiha bilan o‘rganing.",
+      "modules": [
+        { "moduleTitle": "Vue asoslari", "lessonsCount": 10, "duration": "2 soat 30 daqiqa" },
+        {
+          "moduleTitle": "Component & Routing",
+          "lessonsCount": 10,
+          "duration": "3 soat 00 daqiqa"
+        },
+        { "moduleTitle": "Vue Loyihasi", "lessonsCount": 10, "duration": "3 soat 10 daqiqa" }
+      ]
+    }
+  ]
+}
