@@ -8,6 +8,7 @@ import { Coding } from './pages/coding/coding';
 import { ContactUs } from './pages/contact-us/contact-us';
 import { Login } from './pages/auth/login/login';
 import { Register } from './pages/auth/register/register';
+import { CoursesDetailsPage } from './pages/courses-details-page/courses-details-page';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,7 @@ export const routes: Routes = [
     children: [
       { path: '', component: Home },
       { path: 'courses', component: Courses },
+      { path: 'courses/:id', component: CoursesDetailsPage },
       { path: 'projects', component: Projects },
       { path: 'coding', component: Coding },
       { path: 'dashboard', component: Dashboard },

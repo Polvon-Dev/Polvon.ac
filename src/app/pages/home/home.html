@@ -1,6 +1,6 @@
 <div class="max-w-[94%] p-4 mx-auto">
   <div
-    class="rounded-xl h-64 flex justify-between items-center pl-12 pr-12 bg-gray-900 border-gray-600 shadow-md"
+    class="rounded-xl bg-gray-100 h-64 flex justify-between items-center pl-12 pr-12 dark:bg-gray-900 border-gray-600 shadow-md"
   >
     <div class="flex flex-col gap-1">
       <h1 class="text-2xl font-semibold">Sammi - dasturlash kurslari</h1>
@@ -18,7 +18,7 @@
         </button>
         <button
           (click)="onClickProjects()"
-          class="p-2 bg-gray-800 w-28 text-white dark:bg-gray-800 rounded-2xl dark:text-white"
+          class="p-2 text-black w-28 bg-gray-100 dark:bg-gray-800 rounded-2xl dark:text-white"
         >
           Loyihalar
         </button>
@@ -35,9 +35,30 @@
   <h1 class="text-3xl mt-8 mb-8">Kurslar</h1>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div *ngFor="let item of courses" class="rounded-md shadow-md">
-      <img class="rounded-sm w-full h-56 object-cover" [src]="item.thumbnail" [alt]="item.title" />
-      <h3 class="text-lg font-medium h-12 flex items-center bg-gray-900 pl-2">{{ item.title }}</h3>
-    </div>
+    <ng-container *ngIf="loading">
+      <div
+        *ngFor="let i of [1, 2, 3, 4, 5, 6]"
+        class="animate-pulse bg-white dark:bg-gray-900 rounded-lg shadow p-4"
+      >
+        <div class="h-40 bg-gray-300 dark:bg-gray-700 rounded-md mb-4"></div>
+        <div class="h-5 bg-gray-300 dark:bg-gray-700 rounded w-3/4 mb-2"></div>
+        <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/2"></div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="!loading">
+      <div *ngFor="let course of courses" class="rounded-md shadow-md">
+        <a [routerLink]="['/courses', course.id]">
+          <img
+            class="rounded-sm w-full h-56 object-cover"
+            [src]="course.thumbnail"
+            [alt]="course.title"
+          />
+          <h3 class="text-lg font-medium h-12 text-white flex items-center bg-gray-900 pl-2">
+            {{ course.title }}
+          </h3>
+        </a>
+      </div>
+    </ng-container>
   </div>
 </div>

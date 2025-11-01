@@ -1,0 +1,68 @@
+<div *ngFor="let item of course" class="flex z-10 flex-col max-w-[94%] gap-6 p-4 mx-auto">
+  <div class="h-96 bg-gray-100 dark:bg-gray-900 rounded-md px-10">
+    <div class="flex gap-1 justify-between items-center h-full">
+      <div class="flex flex-col gap-6">
+        <h1 class="text-2xl font-medium">{{ item.title }}</h1>
+        <p class="dark:text-gray-400">{{ item.description }}</p>
+        <div class="grid grid-cols-3 gap-2">
+          <span class="grid grid-cols-1 text-lg"
+            ><i class="bi bi-person"></i>{{ item.students }} o'quvchilar</span
+          >
+          <span class="grid grid-cols-1 text-lg"
+            ><i class="bi bi-calendar2-event"></i>{{ item.publishedDate }}
+          </span>
+          <span class="grid grid-cols-1 text-lg"
+            ><i class="bi bi-list"></i>{{ item.lessons }} darslar soni</span
+          >
+        </div>
+
+        <div>
+          <p class="text-lg">
+            Davomiyligi: <span class="text-md font-medium">{{ item.duration }}</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          [src]="item.thumbnail"
+          alt="item.title"
+          class="w-[400px] object-cover h-72 rounded-md"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="flex gap-8">
+    <div class="p-4 bg-gray-100 grid dark:bg-gray-900 rounded-md w-[65%]">
+      <h2 class="text-2xl font-medium">Kurs dasturi</h2>
+
+      <div class="grid grid-cols-3">
+        <div class="grid text-lg">
+          <i class="bi bi-list"></i>
+          <span>modullar soni</span>
+          <span>{{ item.modules.length }}ta</span>
+        </div>
+        <div class="grid text-lg">
+          <i class="bi bi-caret-right-square"></i>
+          <span>Darslar soni</span>
+          <span>{{ item.modules.length }}ta</span>
+        </div>
+        <div class="grid text-lg">
+          <i class="bi bi-calendar4-week"></i>
+          <span>Kurs davomiyligi</span>
+          <span>{{ item.modules.length }}ta</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-md w-[35%] flex flex-col gap-6">
+      <div class="border-b flex flex-col gap-4 mb-2">
+        <h2 class="text-lg">Kurs narxi:</h2>
+        <h1 class="text-xl">{{ item.price }}</h1>
+      </div>
+      <button class="dark:bg-white w-full bg-gray-800 p-2 text-white dark:text-black rounded-2xl">
+        Kursni ko'rish
+      </button>
+    </div>
+  </div>
+</div>

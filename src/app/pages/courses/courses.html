@@ -2,9 +2,30 @@
   <h1 class="text-3xl mb-8">Kurslar</h1>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div *ngFor="let item of courses" class="rounded-md shadow-md">
-      <img class="rounded-sm w-full h-56 object-cover" [src]="item.thumbnail" [alt]="item.title" />
-      <h3 class="text-lg font-medium h-12 flex items-center bg-gray-900 pl-2">{{ item.title }}</h3>
-    </div>
+    <ng-container *ngIf="loading">
+      <div
+        *ngFor="let i of [1, 2, 3, 4, 5, 6]"
+        class="animate-pulse bg-white dark:bg-gray-900 rounded-lg shadow p-4"
+      >
+        <div class="h-40 bg-gray-300 dark:bg-gray-700 rounded-md mb-4"></div>
+        <div class="h-5 bg-gray-300 dark:bg-gray-700 rounded w-3/4 mb-2"></div>
+        <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-1/2"></div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="!loading">
+      <div *ngFor="let course of courses" class="rounded-md shadow-md">
+        <a [routerLink]="['/courses', course.id]">
+          <img
+            class="rounded-sm w-full h-56 object-cover"
+            [src]="course.thumbnail"
+            [alt]="course.title"
+          />
+          <h3 class="text-lg font-medium h-12 text-white flex items-center bg-gray-900 pl-2">
+            {{ course.title }}
+          </h3>
+        </a>
+      </div>
+    </ng-container>
   </div>
 </div>
