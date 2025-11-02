@@ -1,6 +1,6 @@
 import { AuthService } from './../auth-service';
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Route, Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { select } from '@ngrx/store';
 
@@ -31,8 +31,8 @@ export class Login implements OnInit {
     const isUser = this.savedArr.find(({ email }) => email == newLoginArr.email);
     if (isUser) {
       localStorage.setItem('isUser', JSON.stringify(this.loginObj));
-      window.location.reload();
       this.router.navigate(['']);
+      window.location.reload();
     } else {
       alert("Noto'g'ri email");
     }
