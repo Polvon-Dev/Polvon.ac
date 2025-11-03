@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject, OnInit } from '@angular/core';
+import { CoursesService } from '../courses/courses-service';
 
 @Component({
   selector: 'app-my-courses',
@@ -6,6 +8,4 @@ import { Component } from '@angular/core';
   templateUrl: './my-courses.html',
   styleUrl: './my-courses.css',
 })
-export class MyCourses {
-
-}
+export class MyCourses {}

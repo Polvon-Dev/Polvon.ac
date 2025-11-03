@@ -1,1 +1,50 @@
-<p>add-courses works!</p>
+<div class="max-w-[70%]">
+  <form class="flex flex-col gap-3">
+    <label class="text-lg">Course title</label>
+    <input
+      [(ngModel)]="course.title"
+      class="border dark:bg-gray-100 dark:text-black border-gray-950 outline-none p-2 rounded-lg w-full"
+      name="text"
+      id="text"
+      type="text"
+      placeholder="course title"
+    />
+
+    <label class="text-lg">Course description</label>
+    <input
+      [(ngModel)]="course.description"
+      class="border dark:bg-gray-100 dark:text-black border-gray-950 outline-none p-2 rounded-lg w-full"
+      name="text"
+      id="text"
+      type="text"
+      placeholder="course description"
+    />
+
+    <label class="text-lg">Course image</label>
+    <input
+      type="text"
+      id="text"
+      placeholder="Thumbnail URL"
+      [(ngModel)]="course.thumbnail"
+      name="thumbnail"
+      class="border outline-none dark:text-black rounded-lg p-2"
+    />
+
+    <label class="text-lg">Course price</label>
+    <input
+      [(ngModel)]="course.price"
+      class="border dark:bg-gray-100 dark:text-black border-gray-950 outline-none p-2 rounded-lg w-full"
+      name="number"
+      id="number"
+      type="number"
+      placeholder="0 sum"
+    />
+
+    <button
+      class="dark:bg-gray-900 bg-gray-100 dark:text-white p-3 rounded-lg mt-6"
+      (click)="AddCourses()"
+    >
+      add
+    </button>
+  </form>
+</div>

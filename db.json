@@ -1,4 +1,119 @@
 {
+  "users": [
+    {
+      "id": "1762194231933",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "student"
+    },
+    {
+      "id": "1762194318871",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher"
+    },
+    {
+      "id": "1762196538655",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher"
+    },
+    {
+      "id": "1762197332873",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher"
+    },
+    {
+      "id": "1762197393779",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher"
+    },
+    {
+      "id": "1762197484938",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher"
+    },
+    {
+      "id": "1762197545625",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "student"
+    },
+    {
+      "id": "e8f2",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762197722377
+    },
+    {
+      "id": "d7dc",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762197931417
+    },
+    {
+      "id": "4b16",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762198038477
+    },
+    {
+      "id": "dbe9",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov1333@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762198426633
+    },
+    {
+      "id": "8312",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov113@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762198661921
+    },
+    {
+      "id": "e1e0",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762199006447
+    },
+    {
+      "id": "52c3",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762199212182
+    },
+    {
+      "id": "fe62",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762199708668
+    }
+  ],
   "courses": [
     {
       "id": "javascript",
@@ -18,9 +133,21 @@
           "lessonsCount": 20,
           "duration": "7 soat 21 daqiqa"
         },
-        { "moduleTitle": "JavaScript loyiha", "lessonsCount": 11, "duration": "3 soat 23 daqiqa" },
-        { "moduleTitle": "Murakkab terminlar", "lessonsCount": 12, "duration": "4 soat 53 daqiqa" },
-        { "moduleTitle": "Paint loyihasi", "lessonsCount": 12, "duration": "1 soat 40 daqiqa" }
+        {
+          "moduleTitle": "JavaScript loyiha",
+          "lessonsCount": 11,
+          "duration": "3 soat 23 daqiqa"
+        },
+        {
+          "moduleTitle": "Murakkab terminlar",
+          "lessonsCount": 12,
+          "duration": "4 soat 53 daqiqa"
+        },
+        {
+          "moduleTitle": "Paint loyihasi",
+          "lessonsCount": 12,
+          "duration": "1 soat 40 daqiqa"
+        }
       ]
     },
     {
@@ -36,12 +163,36 @@
       "price": "Bepul / 250 000 UZS",
       "description": "NodeJS ni o‘rnatishdan tortib, tugallangan dasturni serverda joylashtirishgacha bo‘lgan asosiy ma’lumotlar.",
       "modules": [
-        { "moduleTitle": "NodeJS asoslari", "lessonsCount": 16, "duration": "2 soat 37 daqiqa" },
-        { "moduleTitle": "CLI - Ob-Havo", "lessonsCount": 10, "duration": "2 soat 09 daqiqa" },
-        { "moduleTitle": "Express JS", "lessonsCount": 7, "duration": "2 soat 29 daqiqa" },
-        { "moduleTitle": "Murakkab mavzular", "lessonsCount": 6, "duration": "2 soat 18 daqiqa" },
-        { "moduleTitle": "MERN Stack loyiha", "lessonsCount": 6, "duration": "3 soat 28 daqiqa" },
-        { "moduleTitle": "ExpressJS loyiha", "lessonsCount": 30, "duration": "5 soat 30 daqiqa" }
+        {
+          "moduleTitle": "NodeJS asoslari",
+          "lessonsCount": 16,
+          "duration": "2 soat 37 daqiqa"
+        },
+        {
+          "moduleTitle": "CLI - Ob-Havo",
+          "lessonsCount": 10,
+          "duration": "2 soat 09 daqiqa"
+        },
+        {
+          "moduleTitle": "Express JS",
+          "lessonsCount": 7,
+          "duration": "2 soat 29 daqiqa"
+        },
+        {
+          "moduleTitle": "Murakkab mavzular",
+          "lessonsCount": 6,
+          "duration": "2 soat 18 daqiqa"
+        },
+        {
+          "moduleTitle": "MERN Stack loyiha",
+          "lessonsCount": 6,
+          "duration": "3 soat 28 daqiqa"
+        },
+        {
+          "moduleTitle": "ExpressJS loyiha",
+          "lessonsCount": 30,
+          "duration": "5 soat 30 daqiqa"
+        }
       ]
     },
     {
@@ -57,8 +208,16 @@
       "price": "Bepul / 250 000 UZS",
       "description": "Backend olamidagi mashhur frameworklardan biri NestJS — amaliy loyihalar bilan.",
       "modules": [
-        { "moduleTitle": "Nest JS asoslari", "lessonsCount": 10, "duration": "2 soat 01 daqiqa" },
-        { "moduleTitle": "MERN Stack loyiha", "lessonsCount": 6, "duration": "1 soat 52 daqiqa" }
+        {
+          "moduleTitle": "Nest JS asoslari",
+          "lessonsCount": 10,
+          "duration": "2 soat 01 daqiqa"
+        },
+        {
+          "moduleTitle": "MERN Stack loyiha",
+          "lessonsCount": 6,
+          "duration": "1 soat 52 daqiqa"
+        }
       ]
     },
     {
@@ -74,10 +233,26 @@
       "price": "Bepul / 300 000 UZS",
       "description": "Frontend dunyosida eng mashhur kutubxona — React JS bilan amaliy loyihalar yaratish.",
       "modules": [
-        { "moduleTitle": "React asoslari", "lessonsCount": 22, "duration": "5 soat 30 daqiqa" },
-        { "moduleTitle": "Hooks", "lessonsCount": 15, "duration": "3 soat 00 daqiqa" },
-        { "moduleTitle": "Routing & Context", "lessonsCount": 10, "duration": "2 soat 10 daqiqa" },
-        { "moduleTitle": "React Loyihasi", "lessonsCount": 18, "duration": "4 soat 02 daqiqa" }
+        {
+          "moduleTitle": "React asoslari",
+          "lessonsCount": 22,
+          "duration": "5 soat 30 daqiqa"
+        },
+        {
+          "moduleTitle": "Hooks",
+          "lessonsCount": 15,
+          "duration": "3 soat 00 daqiqa"
+        },
+        {
+          "moduleTitle": "Routing & Context",
+          "lessonsCount": 10,
+          "duration": "2 soat 10 daqiqa"
+        },
+        {
+          "moduleTitle": "React Loyihasi",
+          "lessonsCount": 18,
+          "duration": "4 soat 02 daqiqa"
+        }
       ]
     },
     {
@@ -93,9 +268,21 @@
       "price": "Bepul / 180 000 UZS",
       "description": "JavaScript’ning yanada xavfsizroq tili — TypeScript ni o‘rganing va professional kod yozishni boshlang.",
       "modules": [
-        { "moduleTitle": "TS asoslari", "lessonsCount": 10, "duration": "3 soat 00 daqiqa" },
-        { "moduleTitle": "Advanced Types", "lessonsCount": 8, "duration": "2 soat 30 daqiqa" },
-        { "moduleTitle": "TS bilan React", "lessonsCount": 10, "duration": "2 soat 39 daqiqa" }
+        {
+          "moduleTitle": "TS asoslari",
+          "lessonsCount": 10,
+          "duration": "3 soat 00 daqiqa"
+        },
+        {
+          "moduleTitle": "Advanced Types",
+          "lessonsCount": 8,
+          "duration": "2 soat 30 daqiqa"
+        },
+        {
+          "moduleTitle": "TS bilan React",
+          "lessonsCount": 10,
+          "duration": "2 soat 39 daqiqa"
+        }
       ]
     },
     {
@@ -111,13 +298,21 @@
       "price": "Bepul / 350 000 UZS",
       "description": "Angular — kuchli frontend framework. Amaliy loyihalar bilan modul, service, va routing asoslarini o‘rganing.",
       "modules": [
-        { "moduleTitle": "Angular asoslari", "lessonsCount": 20, "duration": "6 soat 30 daqiqa" },
+        {
+          "moduleTitle": "Angular asoslari",
+          "lessonsCount": 20,
+          "duration": "6 soat 30 daqiqa"
+        },
         {
           "moduleTitle": "Component va Template",
           "lessonsCount": 15,
           "duration": "4 soat 00 daqiqa"
         },
-        { "moduleTitle": "Routing & Service", "lessonsCount": 20, "duration": "5 soat 48 daqiqa" }
+        {
+          "moduleTitle": "Routing & Service",
+          "lessonsCount": 20,
+          "duration": "5 soat 48 daqiqa"
+        }
       ]
     },
     {
@@ -133,12 +328,23 @@
       "price": "Bepul / 280 000 UZS",
       "description": "Next.js — React asosida yaratilgan zamonaviy framework. SEO va SSR bilan ishlashni o‘rganing.",
       "modules": [
-        { "moduleTitle": "NextJS asoslari", "lessonsCount": 18, "duration": "4 soat 12 daqiqa" },
-        { "moduleTitle": "Dynamic Routing", "lessonsCount": 10, "duration": "2 soat 00 daqiqa" },
-        { "moduleTitle": "API Routes", "lessonsCount": 12, "duration": "3 soat 43 daqiqa" }
+        {
+          "moduleTitle": "NextJS asoslari",
+          "lessonsCount": 18,
+          "duration": "4 soat 12 daqiqa"
+        },
+        {
+          "moduleTitle": "Dynamic Routing",
+          "lessonsCount": 10,
+          "duration": "2 soat 00 daqiqa"
+        },
+        {
+          "moduleTitle": "API Routes",
+          "lessonsCount": 12,
+          "duration": "3 soat 43 daqiqa"
+        }
       ]
     },
-
     {
       "id": "html-css",
       "title": "HTML & CSS",
@@ -152,8 +358,16 @@
       "price": "Bepul / 150 000 UZS",
       "description": "Frontend asoslari — HTML va CSS bilan saytlarga hayot baxsh eting.",
       "modules": [
-        { "moduleTitle": "HTML asoslari", "lessonsCount": 15, "duration": "4 soat 00 daqiqa" },
-        { "moduleTitle": "CSS asoslari", "lessonsCount": 20, "duration": "6 soat 30 daqiqa" }
+        {
+          "moduleTitle": "HTML asoslari",
+          "lessonsCount": 15,
+          "duration": "4 soat 00 daqiqa"
+        },
+        {
+          "moduleTitle": "CSS asoslari",
+          "lessonsCount": 20,
+          "duration": "6 soat 30 daqiqa"
+        }
       ]
     },
     {
@@ -169,14 +383,257 @@
       "price": "Bepul / 220 000 UZS",
       "description": "VueJS — yengil va qulay frontend framework. Asosiy konseptlar va real loyiha bilan o‘rganing.",
       "modules": [
-        { "moduleTitle": "Vue asoslari", "lessonsCount": 10, "duration": "2 soat 30 daqiqa" },
+        {
+          "moduleTitle": "Vue asoslari",
+          "lessonsCount": 10,
+          "duration": "2 soat 30 daqiqa"
+        },
         {
           "moduleTitle": "Component & Routing",
           "lessonsCount": 10,
           "duration": "3 soat 00 daqiqa"
         },
-        { "moduleTitle": "Vue Loyihasi", "lessonsCount": 10, "duration": "3 soat 10 daqiqa" }
+        {
+          "moduleTitle": "Vue Loyihasi",
+          "lessonsCount": 10,
+          "duration": "3 soat 10 daqiqa"
+        }
       ]
+    },
+    {
+      "id": "ff37",
+      "teacherName": "Polvonboy",
+      "title": "React",
+      "description": "Strong junior uchun juda foydali tasks",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 350000,
+      "studentsEnrolled": 0,
+      "createdAt": "2025-11-03T17:59:35.029Z"
+    },
+    {
+      "id": "0361",
+      "teacherName": "Polvonboy",
+      "title": "React",
+      "description": "React",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 230000,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03T18:03:43.543Z"
+    },
+    {
+      "id": "7346",
+      "teacherId": 1762194318871,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "juda murakkab",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 700000,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "86e9",
+      "teacherId": 1762194318871,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 980000,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "6478",
+      "teacherId": 1762194318871,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 444444,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "6579",
+      "teacherId": 1762196538655,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 980000,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "740a",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 32323,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "2535",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "React",
+      "description": "React",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 898989,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "4218",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "React",
+      "description": "React",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 878787,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "b6fc",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 1111111,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "553b",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 333333,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "94dd",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 89,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "1232",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "Node.js",
+      "description": "iyyhbcyhew fjbenfunew",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0Dt6eWDpQTl9a4CLgOmnEFkfdiNbwx068Xc3o&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 670000,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "d2d9",
+      "teacherId": null,
+      "title": "Node.js",
+      "description": "Node.js",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0Dt6eWDpQTl9a4CLgOmnEFkfdiNbwx068Xc3o&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 232323,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "86f7",
+      "teacherId": null,
+      "teacherName": "Polvonboy",
+      "title": "ol,er",
+      "description": "fererw",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 90,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "a0be",
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "oop",
+      "description": "oop",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0Dt6eWDpQTl9a4CLgOmnEFkfdiNbwx068Xc3o&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 909090,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "93a4",
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "d",
+      "description": "e",
+      "thumbnail": "e",
+      "price": 3,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "93d0",
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "dew",
+      "description": "e",
+      "thumbnail": "e",
+      "price": 2,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "af33",
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "oo",
+      "description": "oo",
+      "thumbnail": "oo",
+      "price": 1,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "229b",
+      "teacherId": 1762199708668,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "wed",
+      "description": "dew",
+      "thumbnail": "dwe",
+      "price": 2,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "f971",
+      "teacherId": 1762199708668,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "dwe",
+      "description": "dew",
+      "thumbnail": "dew",
+      "price": 0,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
+    },
+    {
+      "id": "5c4f",
+      "teacherId": "1762199708668",
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "1",
+      "description": "1",
+      "thumbnail": "1",
+      "price": 1,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-03"
     }
   ]
 }
