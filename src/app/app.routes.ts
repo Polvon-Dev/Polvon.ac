@@ -9,6 +9,13 @@ import { ContactUs } from './pages/contact-us/contact-us';
 import { Login } from './pages/auth/login/login';
 import { Register } from './pages/auth/register/register';
 import { CoursesDetailsPage } from './pages/courses-details-page/courses-details-page';
+import { AddCourses } from './pages/add-courses/add-courses';
+import { TeacherDashboard } from './pages/teacher-dashboard/teacher-dashboard';
+import { MyCourses } from './pages/my-courses/my-courses';
+import { StudentEnrolled } from './pages/student-enrolled/student-enrolled';
+import { AdminDashboard } from './pages/admin-dashboard/admin-dashboard';
+import { AdminManageCourses } from './pages/admin-manage-courses/admin-manage-courses';
+import { AdminManageUsers } from './pages/admin-manage-users/admin-manage-users';
 
 export const routes: Routes = [
   {
@@ -24,6 +31,13 @@ export const routes: Routes = [
       { path: 'contactUs', component: ContactUs },
       { path: 'login', component: Login },
       { path: 'register', component: Register },
+      { path: 'teacherDashboard', component: TeacherDashboard },
+      { path: 'addCourses', component: AddCourses },
+      { path: 'myCourses', component: MyCourses },
+      { path: 'studentEnrolled', component: StudentEnrolled },
+      { path: 'adminDashboard', component: AdminDashboard },
+      { path: 'manageCourses', component: AdminManageCourses },
+      { path: 'manageUsers', component: AdminManageUsers },
     ],
   },
 ];

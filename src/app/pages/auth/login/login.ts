@@ -18,6 +18,7 @@ export class Login implements OnInit {
 
   ngOnInit(): void {
     const saved = localStorage.getItem('signUpUsers');
+
     if (saved) this.savedArr = JSON.parse(saved);
   }
   loginObj: any = {

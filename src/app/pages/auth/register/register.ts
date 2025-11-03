@@ -17,15 +17,16 @@ export class Register implements OnInit {
     firstName: 'Polvonboy',
     lastName: 'Abdirimov',
     email: 'polvonboyabdirimov13@gmail.com',
+    role: 'student',
   };
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
-
-  // sendArr() {
-  //   this.authService.updateUsers(this.signUpUsers);
-  // }
   onSignUp() {
+    if (!this.signUpobj.role) {
+      alert('Iltimos, rolni tanlang!');
+      return;
+    }
     this.signUpUsers.push(this.signUpobj);
     localStorage.setItem('signUpUsers', JSON.stringify(this.signUpUsers));
     this.router.navigate(['/login']);

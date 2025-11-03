@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Header } from '../header/header';
 import { RouterOutlet } from '@angular/router';
 import { Sidebar } from '../sidebar/sidebar';
@@ -13,12 +13,20 @@ import { CommonModule } from '@angular/common';
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',
 })
-export class MainLayout {
+export class MainLayout implements OnInit {
+  users: any = {};
   private store = inject(Store);
   isSidebarOpen = this.store.select(selectHeader);
   onToggleSidebar() {
     console.log('Sidebar toggled!');
     this.store.dispatch(toggleSidebar());
+  }
+
+  ngOnInit(): void {
+    const storedUser = localStorage.getItem('signUpUsers');
+    if (storedUser) {
+      this.users = JSON.parse(storedUser);
+    }
   }
 
   constructor() {

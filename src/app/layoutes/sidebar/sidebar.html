@@ -8,12 +8,12 @@
         Sahifalar
       </h3>
 
-      <nav class="flex flex-col gap-2">
+      <nav *ngIf="users.role === 'student'" class="flex flex-col gap-2">
         <a
           routerLink=""
           routerLinkActive="dark:bg-gray-800 bg-gray-100"
           [routerLinkActiveOptions]="{ exact: true }"
-          class="flex items-center gap-2 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
         >
           <i class="bi bi-house-door"></i>
           <span
@@ -81,6 +81,115 @@
             [class.opacity-100]="!collapsed()"
             *ngIf="!collapsed()"
             >Dashboard</span
+          >
+        </a>
+      </nav>
+
+      <nav *ngIf="users.role === 'teacher'" class="flex flex-col gap-2">
+        <a
+          routerLink="/teacherDashboard"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-speedometer"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >dashboard</span
+          >
+        </a>
+        <a
+          routerLink="/addCourses"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-folder-plus"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >addCourses</span
+          >
+        </a>
+
+        <a
+          routerLink="/myCourses"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-book"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >myCourses</span
+          >
+        </a>
+
+        <a
+          routerLink="/studentEnrolled"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-people"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >studentEnrolled</span
+          >
+        </a>
+      </nav>
+
+      <nav *ngIf="users.role === 'admin'" class="flex flex-col gap-2">
+        <a
+          routerLink="/adminDashboard"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-speedometer"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >dashboard</span
+          >
+        </a>
+        <a
+          routerLink="/manageUsers"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-people"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Manage Users</span
+          >
+        </a>
+
+        <a
+          routerLink="/manageCourses"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-book"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Manage Courses</span
           >
         </a>
       </nav>
