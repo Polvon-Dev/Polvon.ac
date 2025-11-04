@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-student-enrolled',
@@ -6,6 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './student-enrolled.html',
   styleUrl: './student-enrolled.css',
 })
-export class StudentEnrolled {
-
-}
+export class StudentEnrolled {}

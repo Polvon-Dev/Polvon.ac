@@ -3,7 +3,7 @@ import { CoursesInterface } from '../courses/courses-interface';
 import { CoursesService } from '../courses/courses-service';
 import { Courses } from './../courses/courses';
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -22,8 +22,28 @@ export class CoursesDetailsPage implements OnInit {
   totalDuration!: string;
   course: any;
   courseId!: string;
+  user: any;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {}
+  enrollCourse(courseId: string) {
+    const parsed = localStorage.getItem('isUser');
+    if (!parsed) return;
+    this.http.get<any[]>('http://localhost:3000/users?role=student').subscribe({
+      next: (users) => {
+        const student = users[users.length - 1];
+        const studentId = String(student.id);
+
+        const enrollment = { studentId, courseId };
+
+        this.http.post('http://localhost:3000/studentEnrollments', enrollment).subscribe({
+          next: () => {
+            alert("Kursga muvafaqiyatli qo'shildingiz");
+            this.router.navigate(['/dashboard']);
+          },
+        });
+      },
+    });
+  }
 
   ngOnInit(): void {
     this.courseId = this.route.snapshot.paramMap.get('id')!;
@@ -33,7 +53,8 @@ export class CoursesDetailsPage implements OnInit {
         .get<any[]>(`http://localhost:3000/courses?id=${this.courseId}`)
         .subscribe((data) => {
           this.course = data[0];
-          this.module = this.course.modules.map((mod: any) => ({ ...mod }));
+          this.module = this.course.modules?.map((mod: any) => ({ ...mod })) || [];
+
           this.totalLessons = this.module.reduce((a, b) => a + b.lessonsCount, 0);
           this.module.forEach((mod: any) => {
             if (mod.duration) {

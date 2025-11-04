@@ -28,7 +28,7 @@ export class AddCourses implements OnInit {
     }
 
     const newCourse = {
-      teacherId: String(this.user.teacherId),
+      teacherId: Number(this.user.teacherId),
       teacherName: `${this.user.firstName} ${this.user.lastName}`,
       title: this.course.title,
       description: this.course.description,
@@ -61,7 +61,6 @@ export class AddCourses implements OnInit {
       } else {
         this.user = parsed;
       }
-      console.log('Teacher foydalanuvchi:', this.user);
     }
   }
 }
