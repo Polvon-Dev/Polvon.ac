@@ -4,6 +4,7 @@ import { AuthService } from '../auth-service';
 import { UserInterface } from '../user-interface';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { StudentEnrolledService } from '../../student-enrolled/student-enrolled-service';
 
 @Component({
   selector: 'app-register',
@@ -13,6 +14,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
 })
 export class Register implements OnInit {
+  teacherId: any;
   signUpUsers: any[] = [];
   signUpobj: UserInterface = {
     firstName: 'Polvonboy',
@@ -20,7 +22,11 @@ export class Register implements OnInit {
     email: 'polvonboyabdirimov13@gmail.com',
     role: 'student',
   };
-  constructor(private router: Router, private http: HttpClient) {}
+  constructor(
+    private router: Router,
+    private http: HttpClient,
+    private studentEnrolledService: StudentEnrolledService
+  ) {}
 
   ngOnInit(): void {}
   onSignUp() {

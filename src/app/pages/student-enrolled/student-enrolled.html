@@ -1,1 +1,24 @@
-<p>student-enrolled works!</p>
+<div class="p-4">
+  <h2 class="text-xl font-bold mb-4">Students Enrolled</h2>
+
+  <div *ngIf="students.length === 0">
+    <p class="text-gray-500">Hozircha hech qanday student yozilmagan.</p>
+  </div>
+
+  <div *ngIf="students.length > 0" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    <div *ngFor="let student of students" class="border p-4 rounded-lg shadow-sm">
+      <h3 class="text-lg font-semibold">{{ student.name }}</h3>
+      <p class="text-gray-600">{{ student.email }}</p>
+
+      <!-- Shu student qaysi kursga yozilganini topamiz -->
+      <p class="mt-2 text-sm text-gray-500">
+        Kurslar:
+        <span *ngFor="let e of enrollments">
+          <ng-container *ngIf="e.studentId === student.id">
+            {{ getCourseTitle(e.courseId) }}
+          </ng-container>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

@@ -33,10 +33,9 @@ export class MyCourses implements OnInit {
   }
 
   getCourses() {
-    this.http.get('http://localhost:3000/courses').subscribe({
+    this.http.get(`http://localhost:3000/courses?teacherId=${this.teacherId}`).subscribe({
       next: (data: any) => {
         this.Courses = data;
-        this.teacherCourses = this.Courses.filter((course) => course.teacherId === this.teacherId);
         this.loading = false;
       },
     });

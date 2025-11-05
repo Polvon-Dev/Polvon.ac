@@ -14,7 +14,7 @@
     </ng-container>
 
     <ng-container *ngIf="!loading">
-      <div *ngFor="let course of teacherCourses" class="rounded-md shadow-md">
+      <div *ngFor="let course of Courses" class="rounded-md shadow-md">
         <a [routerLink]="['/courses', course.id]">
           <img
             class="rounded-sm w-full h-56 object-cover"

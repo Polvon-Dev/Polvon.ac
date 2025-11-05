@@ -64,7 +64,7 @@ export class Header implements OnInit {
   }
 
   logOut() {
-    localStorage.removeItem('signUpUsers');
+    localStorage.removeItem('isUser');
     this.users = null;
     this.showLogOut = false;
     // window.location.reload();
