@@ -27,7 +27,6 @@ export class Dashboard implements OnInit {
         next: (users) => {
           const student = users[users.length - 1];
           const studentId = student.id;
-          console.log('Student ID:', studentId);
 
           this.http
             .get<any>(`http://localhost:3000/studentEnrollments?studentId=${studentId}`)

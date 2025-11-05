@@ -61,13 +61,12 @@ export class Header implements OnInit {
   toggleLogout() {
     this.showLogOut = !this.showLogOut;
     this.cdr.detectChanges();
-    console.log(this.showLogOut);
   }
 
   logOut() {
-    localStorage.removeItem('isUser');
+    localStorage.removeItem('signUpUsers');
     this.users = null;
     this.showLogOut = false;
-    window.location.reload();
+    // window.location.reload();
   }
 }

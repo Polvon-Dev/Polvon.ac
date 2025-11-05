@@ -18,7 +18,6 @@ export class MainLayout implements OnInit {
   private store = inject(Store);
   isSidebarOpen = this.store.select(selectHeader);
   onToggleSidebar() {
-    console.log('Sidebar toggled!');
     this.store.dispatch(toggleSidebar());
   }
 
@@ -27,9 +26,5 @@ export class MainLayout implements OnInit {
     if (storedUser) {
       this.users = JSON.parse(storedUser);
     }
-  }
-
-  constructor() {
-    this.isSidebarOpen.subscribe((val) => console.log('Sidebar holati:', val));
   }
 }
