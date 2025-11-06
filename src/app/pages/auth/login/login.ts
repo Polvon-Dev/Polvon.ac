@@ -13,27 +13,32 @@ import { select } from '@ngrx/store';
 export class Login implements OnInit {
   savedArr: any[] = [];
   loginArr: any[] = [];
+  user: any;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
     const saved = localStorage.getItem('signUpUsers');
-
-    if (saved) this.savedArr = JSON.parse(saved);
+    this.savedArr = saved ? JSON.parse(saved) : [];
   }
+
   loginObj: any = {
     email: '',
   };
 
   onLogin() {
-    this.loginArr.push(this.loginObj);
-    const newLoginArr = this.loginArr.find((e) => e.email);
-
-    const isUser = this.savedArr.find(({ email }) => email == newLoginArr.email);
+    const isUser = this.savedArr.find((user: any) => user.email === this.loginObj.email);
     if (isUser) {
-      localStorage.setItem('isUser', JSON.stringify(this.loginObj));
-      this.router.navigate(['']);
+      localStorage.setItem('isUser', JSON.stringify(isUser));
       window.location.reload();
+
+      if (isUser.role === 'teacher') {
+        this.router.navigate(['/teacherDashboard']);
+      } else if (isUser.role === 'student') {
+        this.router.navigate(['/studentDashboard']);
+      } else {
+        this.router.navigate(['/']);
+      }
     } else {
       alert("Noto'g'ri email");
     }

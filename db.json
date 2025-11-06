@@ -88,6 +88,46 @@
       "email": "polvonboyabdirimov13@gmail.com",
       "role": "teacher",
       "teacherId": 1762370746392
+    },
+    {
+      "id": "035f",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762425719010
+    },
+    {
+      "id": "41d6",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762425737125
+    },
+    {
+      "id": "772c",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov133@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762425901749
+    },
+    {
+      "id": "f91e",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762426123752
+    },
+    {
+      "id": "9500",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762426658340
     }
   ],
   "courses": [
@@ -145,6 +185,94 @@
       "price": 45,
       "studentsEnrolled": 0,
       "publishedDate": "2025-11-05"
+    },
+    {
+      "id": "27a7",
+      "teacherId": 1762370746392,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 2,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "4e09",
+      "teacherId": 1762370746392,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 2,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "6920",
+      "teacherId": 1762370746392,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "Angular",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 90,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "8ef5",
+      "teacherId": 1762426658340,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "qa",
+      "description": "qa",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 70,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "bc78",
+      "teacherId": 1762426658340,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "dew",
+      "description": "React",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0Dt6eWDpQTl9a4CLgOmnEFkfdiNbwx068Xc3o&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 33,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "536e",
+      "teacherId": 1762426658340,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "React",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 60,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "d01e",
+      "teacherId": 1762426658340,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "React",
+      "description": "Angular",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fqk9g5hsrut.ufs.sh%2Ff%2Fxu965PmyvPo0iUp6fYhocXUlvFEwuZWOT81zHSksDrGxN4f9&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 7,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
+    },
+    {
+      "id": "377b",
+      "teacherId": 1762426658340,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "xwx",
+      "description": "ded",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 34,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-06"
     }
   ]
 }

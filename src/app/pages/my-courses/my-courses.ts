@@ -1,9 +1,10 @@
 import { Courses } from './../courses/courses';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CoursesService } from '../courses/courses-service';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { MyCoursesService } from './my-courses-service';
 
 @Component({
   selector: 'app-my-courses',
@@ -13,31 +14,20 @@ import { RouterLink } from '@angular/router';
   styleUrl: './my-courses.css',
 })
 export class MyCourses implements OnInit {
-  constructor(private http: HttpClient, private apiUrl: CoursesService) {}
-  loading = true;
-  Courses: any[] = [];
-  teacherCourses: any[] = [];
-  teacherId!: number;
-  user: any;
+  courses: any[] = [];
+  constructor(
+    private http: HttpClient,
+    private apiUrl: CoursesService,
+    public myCoursesService: MyCoursesService
+  ) {}
+
   ngOnInit(): void {
-    const parsed = localStorage.getItem('signUpUsers');
-    if (parsed) {
-      const users = JSON.parse(parsed);
-      this.user = Array.isArray(users) ? users[users.length - 1] : users;
-      this.teacherId = Number(this.user.teacherId);
+    setTimeout(() => {
+      this.myCoursesService.getCourses();
+    }, 1000);
 
-      setTimeout(() => {
-        this.getCourses();
-      }, 1000);
-    }
-  }
-
-  getCourses() {
-    this.http.get(`http://localhost:3000/courses?teacherId=${this.teacherId}`).subscribe({
-      next: (data: any) => {
-        this.Courses = data;
-        this.loading = false;
-      },
+    this.myCoursesService.courses$.subscribe((data) => {
+      this.courses = data;
     });
   }
 }
