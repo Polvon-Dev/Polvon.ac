@@ -33,7 +33,7 @@ export class Login implements OnInit {
       window.location.reload();
 
       if (isUser.role === 'teacher') {
-        this.router.navigate(['/teacherDashboard']);
+        this.router.navigate(['/studentEnrolled']);
       } else if (isUser.role === 'student') {
         this.router.navigate(['/studentDashboard']);
       } else {
