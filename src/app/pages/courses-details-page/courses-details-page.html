@@ -4,23 +4,23 @@
       <div class="flex flex-col gap-6">
         <h1 class="text-2xl font-medium">{{ course.title }}</h1>
         <p class="dark:text-gray-400">{{ course.description }}</p>
-        <div class="grid grid-cols-3 gap-2">
-          <span class="grid grid-cols-1 text-lg"
-            ><i class="bi bi-person"></i>{{ course.students }} o'quvchilar</span
+        <div class="grid grid-cols-2 gap-10">
+          <span class="flex gap-4 text-lg"
+            ><i class="bi bi-person"></i>{{ enrollStudents.length }} o'quvchilar</span
           >
-          <span class="grid grid-cols-1 text-lg"
+          <span class="flex gap-4 text-lg"
             ><i class="bi bi-calendar2-event"></i>{{ course.publishedDate }}
           </span>
-          <span class="grid grid-cols-1 text-lg"
+          <!-- <span class="grid grid-cols-1 text-lg"
             ><i class="bi bi-list"></i>{{ course.lessons }} darslar soni</span
-          >
+          > -->
         </div>
 
-        <div>
+        <!-- <div>
           <p class="text-lg">
             Davomiyligi: <span class="text-md font-medium">{{ course.duration }}</span>
           </p>
-        </div>
+        </div> -->
       </div>
       <div class="w-[47%]">
         <img

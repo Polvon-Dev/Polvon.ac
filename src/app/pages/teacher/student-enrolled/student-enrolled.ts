@@ -1,4 +1,4 @@
-import { Courses } from './../courses/courses';
+import { Courses } from '../../courses/courses';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { StudentEnrolledService } from './student-enrolled-service';

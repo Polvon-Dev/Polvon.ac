@@ -11,14 +11,16 @@
     />
 
     <label class="text-lg">Course description</label>
-    <input
+    <textarea
       [(ngModel)]="course.description"
       class="border dark:bg-gray-100 dark:text-black border-gray-950 outline-none p-2 rounded-lg w-full"
-      name="text"
+      name="textarea"
       id="text"
-      type="text"
+      type="textarea"
       placeholder="course description"
-    />
+      rows="5"
+    >
+    </textarea>
 
     <label class="text-lg">Course image</label>
     <input

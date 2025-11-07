@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { MyCoursesService } from '../my-courses/my-courses-service';
+import { MyCoursesService } from '../../students/my-courses/my-courses-service';
 import { CommonModule } from '@angular/common';
 import { StudentEnrolledService } from '../student-enrolled/student-enrolled-service';
 import { combineLatest } from 'rxjs';

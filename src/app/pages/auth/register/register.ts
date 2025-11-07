@@ -4,7 +4,7 @@ import { AuthService } from '../auth-service';
 import { UserInterface } from '../user-interface';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { StudentEnrolledService } from '../../student-enrolled/student-enrolled-service';
+import { StudentEnrolledService } from '../../teacher/student-enrolled/student-enrolled-service';
 
 @Component({
   selector: 'app-register',

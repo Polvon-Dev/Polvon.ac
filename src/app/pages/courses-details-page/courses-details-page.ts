@@ -23,6 +23,7 @@ export class CoursesDetailsPage implements OnInit {
   course: any;
   courseId!: string;
   user: any;
+  enrollStudents: any;
 
   constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {}
   enrollCourse(courseId: string) {
@@ -47,6 +48,12 @@ export class CoursesDetailsPage implements OnInit {
 
   ngOnInit(): void {
     this.courseId = this.route.snapshot.paramMap.get('id')!;
+
+    this.http.get(`http://localhost:3000/studentEnrollments?courseId=${this.courseId}`).subscribe({
+      next: (data: any) => {
+        this.enrollStudents = data;
+      },
+    });
 
     if (this.courseId) {
       this.http
