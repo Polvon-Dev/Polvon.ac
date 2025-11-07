@@ -4,43 +4,46 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
     <div class="bg-green-600 text-white rounded-xl p-5 shadow">
       <h2 class="text-xl font-semibold">Total Teachers</h2>
-      <p class="text-3xl mt-3">iuh</p>
+      <p class="text-3xl mt-3">{{ totalTeachers.length }}</p>
     </div>
 
     <div class="bg-red-600 text-white rounded-xl p-5 shadow">
       <h2 class="text-xl font-semibold">Total Students</h2>
-      <p class="text-3xl mt-3"></p>
+      <p class="text-3xl mt-3">{{ totalStudents.length }}</p>
     </div>
 
     <div class="bg-blue-600 text-white rounded-xl p-5 shadow">
       <h2 class="text-xl font-semibold">Total Courses</h2>
-      <p class="text-3xl mt-3"></p>
+      <p class="text-3xl mt-3">{{ totalCourses.length }}</p>
     </div>
     <div class="bg-sky-600 text-white rounded-xl p-5 shadow">
       <h2 class="text-xl font-semibold">Total Enrollments</h2>
-      <p class="text-3xl mt-3"></p>
+      <p class="text-3xl mt-3">{{ totalEnrollments.length }}</p>
     </div>
     <div class="bg-purple-600 text-white rounded-xl p-5 shadow">
       <h2 class="text-xl font-semibold">Total Price</h2>
-      <p class="text-3xl mt-3"></p>
+      <p class="text-3xl mt-3">{{ totalPrice }}</p>
     </div>
   </div>
 
   <div class="mt-8">
     <h2 class="text-xl font-bold mb-4">Teachers</h2>
     <table class="min-w-full border rounded-lg overflow-hidden">
-      <thead class="bg-gray-100 text-gray-700">
+      <thead class="bg-gray-100 dark:bg-gray-300 text-gray-700">
         <tr>
-          <th class="p-3 text-left"></th>
-          <th class="p-3 text-left"></th>
-          <th class="p-3 text-left"></th>
+          <th class="p-3 text-left">FirstName</th>
+          <th class="p-3 text-left">LastName</th>
+          <th class="p-3 text-left">Email</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="border-b hover:bg-gray-50">
-          <td class="p-3"></td>
-          <td class="p-3"></td>
-          <td class="p-3"></td>
+        <tr
+          *ngFor="let teacher of totalTeachers"
+          class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
+        >
+          <td class="p-3">{{ teacher.firstName }}</td>
+          <td class="p-3">{{ teacher.lastName }}</td>
+          <td class="p-3">{{ teacher.email }}</td>
         </tr>
       </tbody>
     </table>
@@ -49,18 +52,21 @@
   <div class="mt-8">
     <h2 class="text-xl font-bold mb-4">Students</h2>
     <table class="min-w-full border rounded-lg overflow-hidden">
-      <thead class="bg-gray-100 text-gray-700">
+      <thead class="bg-gray-100 dark:bg-gray-300 text-gray-700">
         <tr>
-          <th class="p-3 text-left"></th>
-          <th class="p-3 text-left"></th>
-          <th class="p-3 text-left"></th>
+          <th class="p-3 text-left">FirstName</th>
+          <th class="p-3 text-left">LastName</th>
+          <th class="p-3 text-left">Email</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="border-b hover:bg-gray-50">
-          <td class="p-3"></td>
-          <td class="p-3"></td>
-          <td class="p-3"></td>
+        <tr
+          *ngFor="let student of totalStudents"
+          class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
+        >
+          <td class="p-3">{{ student.firstName }}</td>
+          <td class="p-3">{{ student.lastName }}</td>
+          <td class="p-3">{{ student.email }}</td>
         </tr>
       </tbody>
     </table>

@@ -1,1 +1,60 @@
-<p>admin-manage-users works!</p>
+<div class="mt-8">
+  <form class="flex justify-center gap-10 mb-20" action="">
+    <input
+      name="firstName"
+      [(ngModel)]="searchEmail"
+      type="email"
+      placeholder="search"
+      class="rounded-2xl outline-none text-black w-[700px] p-2 px-4"
+    />
+    <button (click)="search()" class="bg-blue-600 p-2 w-40 rounded-md">Search</button>
+  </form>
+
+  <h2 class="text-xl font-bold mb-4">Teachers</h2>
+  <table class="min-w-full border rounded-lg overflow-hidden">
+    <thead class="bg-gray-100 dark:bg-gray-300 text-gray-700">
+      <tr>
+        <th class="p-3 text-left">FirstName</th>
+        <th class="p-3 text-left">Email</th>
+        <th class="p-3 text-left">Role</th>
+        <th class="p-3 text-left">Del</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let teacher of totalTeachers"
+        class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
+      >
+        <td class="p-3">{{ teacher.firstName }}</td>
+        <td class="p-3">{{ teacher.email }}</td>
+        <td class="p-3">{{ teacher.role }}</td>
+        <td (click)="deleteUser(teacher.id)" class="p-3">delete</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="mt-8">
+  <h2 class="text-xl font-bold mb-4">Students</h2>
+  <table class="min-w-full border rounded-lg overflow-hidden">
+    <thead class="bg-gray-100 dark:bg-gray-300 text-gray-700">
+      <tr>
+        <th class="p-3 text-left">FirstName</th>
+        <th class="p-3 text-left">Email</th>
+        <th class="p-3 text-left">Role</th>
+        <th class="p-3 text-left">Del</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let student of totalStudents"
+        class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
+      >
+        <td class="p-3">{{ student.firstName }}</td>
+        <td class="p-3">{{ student.email }}</td>
+        <td class="p-3">{{ student.role }}</td>
+        <td (click)="deleteUser(student.id)" class="p-3">delete</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

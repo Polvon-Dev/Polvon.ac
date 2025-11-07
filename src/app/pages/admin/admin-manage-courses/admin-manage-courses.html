@@ -1,1 +1,25 @@
-<p>admin-manage-courses works!</p>
+<h2 class="text-xl font-bold mb-4">Teachers</h2>
+<table class="min-w-full border rounded-lg overflow-hidden">
+  <thead class="bg-gray-100 dark:bg-gray-300 text-gray-700">
+    <tr>
+      <th class="p-3 text-left">Title</th>
+      <th class="p-3 text-left">Teacher</th>
+      <th class="p-3 text-left">Price</th>
+      <th class="p-3 text-left">Price</th>
+      <th class="p-3 text-left">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let course of courses"
+      class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
+    >
+      <td class="p-3">{{ course.title }}</td>
+      <td class="p-3">{{ course.teacherName }}</td>
+      <td class="p-3">{{ course.price }}</td>
+      <td class="p-3">{{ course.price }}</td>
+
+      <td (click)="deleteUser(course.id)" class="p-3">delete</td>
+    </tr>
+  </tbody>
+</table>

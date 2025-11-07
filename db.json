@@ -23,46 +23,6 @@
   ],
   "users": [
     {
-      "id": "2db4",
-      "firstName": "Polvonboy",
-      "lastName": "Abdirimov",
-      "email": "polvonboyabdirimov13@gmail.com",
-      "role": "teacher",
-      "teacherId": 1762460053112
-    },
-    {
-      "id": "4716",
-      "firstName": "Saidbek",
-      "lastName": "Raxmonov",
-      "email": "polvonboyabdirimov133@gmail.com",
-      "role": "student",
-      "teacherId": 1762461118962
-    },
-    {
-      "id": "68ee",
-      "firstName": "Polvonboy",
-      "lastName": "Abdirimov",
-      "email": "polvonboyabdirimov13@gmail.com",
-      "role": "student",
-      "teacherId": 1762512870558
-    },
-    {
-      "id": "63e2",
-      "firstName": "Polvonboy",
-      "lastName": "Abdirimov",
-      "email": "polvonboyabdirimov13@gmail.com",
-      "role": "student",
-      "teacherId": 1762512889369
-    },
-    {
-      "id": "18e4",
-      "firstName": "Polvonboy",
-      "lastName": "Abdirimov",
-      "email": "polvonboyabdirimov133@gmail.com",
-      "role": "teacher",
-      "teacherId": 1762512911914
-    },
-    {
       "id": "6a19",
       "firstName": "Polvonboy",
       "lastName": "Abdirimov",
