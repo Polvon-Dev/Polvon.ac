@@ -29,7 +29,7 @@ export class CoursesDetailsPage implements OnInit {
   enrollCourse(courseId: string) {
     const parsed = localStorage.getItem('isUser');
     if (!parsed) return;
-    this.http.get<any[]>('http://localhost:3000/users?role=teacher').subscribe({
+    this.http.get<any[]>('http://localhost:3000/users?role=student').subscribe({
       next: (users) => {
         const student = users[users.length - 1];
         const studentId = String(student.id);

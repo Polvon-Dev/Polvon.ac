@@ -48,7 +48,7 @@ export class AdminManageCourses implements OnInit {
   }
 
   deleteUser(id: number) {
-    this.http.get<any[]>(`http://localhost:3000/courses/${id}`).subscribe({
+    this.http.delete<any[]>(`http://localhost:3000/courses/${id}`).subscribe({
       next: () => {
         this.totalCourses = this.totalCourses.filter((u) => u.id !== id);
       },

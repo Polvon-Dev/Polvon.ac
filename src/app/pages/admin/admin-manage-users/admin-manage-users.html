@@ -17,7 +17,7 @@
         <th class="p-3 text-left">FirstName</th>
         <th class="p-3 text-left">Email</th>
         <th class="p-3 text-left">Role</th>
-        <th class="p-3 text-left">Del</th>
+        <th class="p-3 text-left">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -28,7 +28,11 @@
         <td class="p-3">{{ teacher.firstName }}</td>
         <td class="p-3">{{ teacher.email }}</td>
         <td class="p-3">{{ teacher.role }}</td>
-        <td (click)="deleteUser(teacher.id)" class="p-3">delete</td>
+        <td class="p-3">
+          <button (click)="deleteUser(teacher.id)" class="bg-red-600 p-2 px-3 rounded-md">
+            delete
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -42,7 +46,7 @@
         <th class="p-3 text-left">FirstName</th>
         <th class="p-3 text-left">Email</th>
         <th class="p-3 text-left">Role</th>
-        <th class="p-3 text-left">Del</th>
+        <th class="p-3 text-left">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -53,7 +57,11 @@
         <td class="p-3">{{ student.firstName }}</td>
         <td class="p-3">{{ student.email }}</td>
         <td class="p-3">{{ student.role }}</td>
-        <td (click)="deleteUser(student.id)" class="p-3">delete</td>
+        <td class="p-3">
+          <button (click)="deleteUser(student.id)" class="bg-red-600 p-2 px-3 rounded-md">
+            delete
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

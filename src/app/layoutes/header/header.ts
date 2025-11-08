@@ -7,6 +7,7 @@ import { Store } from '@ngrx/store';
 import { selectHeader } from './header.selector';
 import { toggleSidebar } from './header.actions';
 import { ChangeDetectorRef } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-header',
@@ -17,6 +18,7 @@ import { ChangeDetectorRef } from '@angular/core';
 })
 export class Header implements OnInit {
   users: any = {};
+  isUsers: any[] = [];
   showLogOut = false;
   private store = inject(Store);
   isSidebarOpen = this.store.selectSignal(selectHeader);
@@ -26,7 +28,11 @@ export class Header implements OnInit {
     this.store.dispatch(toggleSidebar());
   }
 
-  constructor(private themeService: ThemeService, private cdr: ChangeDetectorRef) {}
+  constructor(
+    private themeService: ThemeService,
+    private cdr: ChangeDetectorRef,
+    private http: HttpClient
+  ) {}
   ngOnInit(): void {
     this.themeService.loadTheme();
     this.theme = this.themeService.theme;
@@ -50,6 +56,14 @@ export class Header implements OnInit {
   toggleTheme() {
     this.themeService.toggleTheme();
     this.theme = this.themeService.theme;
+  }
+
+  getUser() {
+    this.http.get<any[]>('http://localhost:3000/users').subscribe({
+      next: (data: any[]) => {
+        this.isUsers = data;
+      },
+    });
   }
 
   private layout = inject(LayoutService);
