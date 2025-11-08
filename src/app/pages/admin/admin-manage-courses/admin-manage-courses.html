@@ -2,24 +2,30 @@
 <table class="min-w-full border rounded-lg overflow-hidden">
   <thead class="bg-gray-100 dark:bg-gray-300 text-gray-700">
     <tr>
+      <th class="p-3 text-left">Image</th>
       <th class="p-3 text-left">Title</th>
       <th class="p-3 text-left">Teacher</th>
       <th class="p-3 text-left">Price</th>
-      <th class="p-3 text-left">Price</th>
+      <!-- <th class="p-3 text-left">Price</th> -->
       <th class="p-3 text-left">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr
-      *ngFor="let course of courses"
+      *ngFor="let course of totalCourses"
       class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
     >
+      <td class="p-3"><img [src]="course.thumbnail" class="rounded-sm" width="80" /></td>
       <td class="p-3">{{ course.title }}</td>
       <td class="p-3">{{ course.teacherName }}</td>
       <td class="p-3">{{ course.price }}</td>
-      <td class="p-3">{{ course.price }}</td>
+      <!-- <td class="p-3">{{ course.price }}</td> -->
 
-      <td (click)="deleteUser(course.id)" class="p-3">delete</td>
+      <td class="p-3">
+        <button (click)="deleteUser(course.id)" class="bg-red-600 p-2 rounded-md px-4">
+          delete
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>

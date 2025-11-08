@@ -27,7 +27,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let course of totalCourses" class="border-b hover:bg-gray-50">
+        <tr
+          *ngFor="let course of totalCourses"
+          class="border-b dark:bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-50"
+        >
           <td class="p-3">{{ course.title }}</td>
           <td class="p-3">{{ course.description }}</td>
           <td class="p-3">$ {{ course.price }}</td>
