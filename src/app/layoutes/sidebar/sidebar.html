@@ -39,7 +39,7 @@
           >
         </a>
 
-        <a
+        <!-- <a
           routerLink="/projects"
           routerLinkActive="dark:bg-gray-800 bg-gray-100"
           class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
@@ -67,7 +67,84 @@
             *ngIf="!collapsed()"
             >Kod manbalari</span
           >
+        </a> -->
+
+        <a
+          routerLink="/dashboard"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-speedometer"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Dashboard</span
+          >
         </a>
+      </nav>
+
+      <nav *ngIf="!users" class="flex flex-col gap-2">
+        <a
+          routerLink=""
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-house-door"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Bosh sahifa</span
+          >
+        </a>
+        <a
+          routerLink="/courses"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-braces"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Kurslar</span
+          >
+        </a>
+
+        <!-- <a
+          routerLink="/projects"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-chevron-right"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Loyihalar</span
+          >
+        </a>
+
+        <a
+          routerLink="/coding"
+          routerLinkActive="dark:bg-gray-800 bg-gray-100"
+          class="flex items-center gap-4 dark:hover:bg-gray-800 hover:bg-gray-100 rounded-md p-2 font-normal text-md"
+        >
+          <i class="bi bi-bug"></i>
+          <span
+            class="transition-all duration-300"
+            [class.opacity-0]="collapsed()"
+            [class.opacity-100]="!collapsed()"
+            *ngIf="!collapsed()"
+            >Kod manbalari</span
+          >
+        </a> -->
 
         <a
           routerLink="/dashboard"

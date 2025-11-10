@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { LayoutService } from '../../core/layout.service';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../../core/theme.service';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { selectHeader } from './header.selector';
 import { toggleSidebar } from './header.actions';
@@ -31,7 +31,8 @@ export class Header implements OnInit {
   constructor(
     private themeService: ThemeService,
     private cdr: ChangeDetectorRef,
-    private http: HttpClient
+    private http: HttpClient,
+    private route: Router
   ) {}
   ngOnInit(): void {
     this.themeService.loadTheme();
@@ -59,11 +60,20 @@ export class Header implements OnInit {
   }
 
   getUser() {
-    this.http.get<any[]>('http://localhost:3000/users').subscribe({
-      next: (data: any[]) => {
-        this.isUsers = data;
-      },
-    });
+    if (this.users.role == 'student') {
+      this.route.navigate(['']);
+    } else if (this.users.role == 'teacher') {
+      this.route.navigate(['/teacherDashboard']);
+    } else if (this.users.role == 'admin') {
+      this.route.navigate(['/adminDashboard']);
+    } else {
+      // this.route.navigate(['/courses']);
+    }
+    // this.http.get<any[]>('http://localhost:3000/users').subscribe({
+    //   next: (data: any[]) => {
+    //     this.isUsers = data;
+    //   },
+    // });
   }
 
   private layout = inject(LayoutService);

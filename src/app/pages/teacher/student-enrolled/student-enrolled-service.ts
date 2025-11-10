@@ -45,7 +45,6 @@ export class StudentEnrolledService {
     const query = studentIds.map((id) => `id=${id}`).join('&');
     this.http.get(`http://localhost:3000/users?${query}`).subscribe((students: any) => {
       this.students = students;
-      console.log(this.students);
     });
   }
   getCourseTitle(courseId: string) {

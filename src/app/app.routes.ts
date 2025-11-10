@@ -16,6 +16,7 @@ import { StudentEnrolled } from './pages/teacher/student-enrolled/student-enroll
 import { AdminDashboard } from './pages/admin/admin-dashboard/admin-dashboard';
 import { AdminManageCourses } from './pages/admin/admin-manage-courses/admin-manage-courses';
 import { AdminManageUsers } from './pages/admin/admin-manage-users/admin-manage-users';
+import { EditCourse } from './pages/edit-course/edit-course';
 
 export const routes: Routes = [
   {
@@ -38,6 +39,7 @@ export const routes: Routes = [
       { path: 'adminDashboard', component: AdminDashboard },
       { path: 'manageCourses', component: AdminManageCourses },
       { path: 'manageUsers', component: AdminManageUsers },
+      { path: 'editCourse/:id', component: EditCourse },
     ],
   },
 ];

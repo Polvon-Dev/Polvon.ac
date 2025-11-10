@@ -3,22 +3,22 @@
     {
       "id": "c2b8",
       "studentId": "2db4",
-      "courseId": "e0d3"
+      "courseId": null
     },
     {
       "id": "407c",
       "studentId": "2db4",
-      "courseId": "1ce5"
+      "courseId": null
     },
     {
       "id": "a9b3",
       "studentId": "2db4",
-      "courseId": "e0d3"
+      "courseId": null
     },
     {
       "id": "60ef",
       "studentId": "4716",
-      "courseId": "1ce5"
+      "courseId": null
     },
     {
       "id": "3462",
@@ -28,7 +28,7 @@
     {
       "id": "04ce",
       "studentId": "dd67",
-      "courseId": "e0d3"
+      "courseId": null
     },
     {
       "id": "9424",
@@ -38,22 +38,22 @@
     {
       "id": "9004",
       "studentId": "90be",
-      "courseId": "1ce5"
+      "courseId": null
     },
     {
       "id": "c2ad",
       "studentId": "90be",
-      "courseId": "e0d3"
+      "courseId": null
     },
     {
       "id": "dee3",
       "studentId": "dac0",
-      "courseId": "e0d3"
+      "courseId": null
     },
     {
       "id": "3add",
       "studentId": "dac0",
-      "courseId": "1ce5"
+      "courseId": null
     },
     {
       "id": "d07e",
@@ -69,6 +69,31 @@
       "id": "3cf3",
       "studentId": "dac0",
       "courseId": null
+    },
+    {
+      "id": "9f7b",
+      "studentId": "c0c7",
+      "courseId": null
+    },
+    {
+      "id": "e65f",
+      "studentId": "65e2",
+      "courseId": null
+    },
+    {
+      "id": "0fef",
+      "studentId": "65e2",
+      "courseId": null
+    },
+    {
+      "id": "542f",
+      "studentId": "c35c",
+      "courseId": null
+    },
+    {
+      "id": "0456",
+      "studentId": "a512",
+      "courseId": null
     }
   ],
   "users": [
@@ -79,14 +104,6 @@
       "email": "polvonboyabdirimov13@gmail.com",
       "role": "admin",
       "teacherId": 1762513197329
-    },
-    {
-      "id": "dd67",
-      "firstName": "Polvonboy",
-      "lastName": "Abdirimov",
-      "email": "polvonboyabdirimov13@gmail.com",
-      "role": "teacher",
-      "teacherId": 1762596187916
     },
     {
       "id": "90be",
@@ -113,14 +130,6 @@
       "teacherId": 1762601219122
     },
     {
-      "id": "e800",
-      "firstName": "Polvonboy",
-      "lastName": "Abdirimov",
-      "email": "polvonboyabdirimov13@gmail.com",
-      "role": "teacher",
-      "teacherId": 1762601364305
-    },
-    {
       "id": "dac0",
       "firstName": "Polvonboy",
       "lastName": "Abdirimov",
@@ -135,42 +144,105 @@
       "email": "polvonboyabdirimov13@gmail.com",
       "role": "admin",
       "teacherId": 1762601559910
+    },
+    {
+      "id": "c0c7",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "student",
+      "teacherId": 1762772576315
+    },
+    {
+      "id": "fd45",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "admin",
+      "teacherId": 1762773245022
+    },
+    {
+      "id": "303f",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "admin",
+      "teacherId": 1762774062953
+    },
+    {
+      "id": "65e2",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "student",
+      "teacherId": 1762775114427
+    },
+    {
+      "id": "031b",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762775153697
+    },
+    {
+      "id": "49ca",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762777687378
+    },
+    {
+      "id": "af89",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762778515311
+    },
+    {
+      "id": "c35c",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "student",
+      "teacherId": 1762779014321
+    },
+    {
+      "id": "13a0",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762779047679
+    },
+    {
+      "id": "a512",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "student",
+      "teacherId": 1762779356978
+    },
+    {
+      "id": "8068",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "teacher",
+      "teacherId": 1762779393415
+    },
+    {
+      "id": "7879",
+      "firstName": "Polvonboy",
+      "lastName": "Abdirimov",
+      "email": "polvonboyabdirimov13@gmail.com",
+      "role": "admin",
+      "teacherId": 1762779441404
     }
   ],
   "courses": [
-    {
-      "id": "e0d3",
-      "teacherId": 1762460053112,
-      "teacherName": "Polvonboy Abdirimov",
-      "title": "Angular",
-      "description": "Angular",
-      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
-      "price": 90,
-      "studentsEnrolled": 0,
-      "publishedDate": "2025-11-06"
-    },
-    {
-      "id": "1ce5",
-      "teacherId": 1762460053112,
-      "teacherName": "Polvonboy Abdirimov",
-      "title": "Angular",
-      "description": "Angular",
-      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
-      "price": 900,
-      "studentsEnrolled": 0,
-      "publishedDate": "2025-11-06"
-    },
-    {
-      "id": "8206",
-      "teacherId": 1762601364305,
-      "teacherName": "Polvonboy Abdirimov",
-      "title": "React",
-      "description": "up",
-      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
-      "price": 89,
-      "studentsEnrolled": 0,
-      "publishedDate": "2025-11-08"
-    },
     {
       "id": "1743",
       "teacherId": 1762601364305,
@@ -192,6 +264,17 @@
       "price": 90,
       "studentsEnrolled": 0,
       "publishedDate": "2025-11-08"
+    },
+    {
+      "id": "6ed8",
+      "teacherId": 1762779393415,
+      "teacherName": "Polvonboy Abdirimov",
+      "title": "ihuui",
+      "description": "kihiuhuh",
+      "thumbnail": "https://www.sammi.ac/_next/image?url=https%3A%2F%2Fwww.sammi.ac%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fqk9g5hsrut.ufs.sh%252Ff%252Fxu965PmyvPo029yCLv51xPWtVAgLib0hZoQDvKECnGHuYdBj%26w%3D1920%26q%3D75%26dpl%3Ddpl_AyWjnwefx2RFAeEprCzJhU8VkTuz&w=1920&q=75&dpl=dpl_9sBEKp6Vtq4rX75YeLkgkG6tPcnw",
+      "price": 89,
+      "studentsEnrolled": 0,
+      "publishedDate": "2025-11-10"
     }
   ]
 }

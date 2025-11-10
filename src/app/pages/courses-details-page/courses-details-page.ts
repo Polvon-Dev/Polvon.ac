@@ -28,22 +28,25 @@ export class CoursesDetailsPage implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {}
   enrollCourse(courseId: string) {
     const parsed = localStorage.getItem('isUser');
-    if (!parsed) return;
-    this.http.get<any[]>('http://localhost:3000/users?role=student').subscribe({
-      next: (users) => {
-        const student = users[users.length - 1];
-        const studentId = String(student.id);
+    if (!parsed) {
+      this.router.navigate(['/register']);
+    } else {
+      this.http.get<any[]>('http://localhost:3000/users?role=student').subscribe({
+        next: (users) => {
+          const student = users[users.length - 1];
+          const studentId = String(student.id);
 
-        const enrollment = { studentId, courseId };
+          const enrollment = { studentId, courseId };
 
-        this.http.post('http://localhost:3000/studentEnrollments', enrollment).subscribe({
-          next: () => {
-            alert("Kursga muvafaqiyatli qo'shildingiz");
-            this.router.navigate(['/dashboard']);
-          },
-        });
-      },
-    });
+          this.http.post('http://localhost:3000/studentEnrollments', enrollment).subscribe({
+            next: () => {
+              alert("Kursga muvafaqiyatli qo'shildingiz");
+              this.router.navigate(['/dashboard']);
+            },
+          });
+        },
+      });
+    }
   }
 
   ngOnInit(): void {

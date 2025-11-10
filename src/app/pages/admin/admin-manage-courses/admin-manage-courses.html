@@ -6,8 +6,7 @@
       <th class="p-3 text-left">Title</th>
       <th class="p-3 text-left">Teacher</th>
       <th class="p-3 text-left">Price</th>
-      <!-- <th class="p-3 text-left">Price</th> -->
-      <th class="p-3 text-left">Action</th>
+      <th class="p-3 text-left">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -19,10 +18,15 @@
       <td class="p-3">{{ course.title }}</td>
       <td class="p-3">{{ course.teacherName }}</td>
       <td class="p-3">{{ course.price }}</td>
-      <!-- <td class="p-3">{{ course.price }}</td> -->
 
-      <td class="p-3">
-        <button (click)="deleteUser(course.id)" class="bg-red-600 p-2 rounded-md px-4">
+      <td class="p-3 flex gap-4 items-center">
+        <!-- <button
+          class="bg-yellow-500 text-white py-1 px-4 rounded hover:bg-yellow-600"
+          (click)="onEdit(course)"
+        >
+          Edit
+        </button> -->
+        <button (click)="deleteUser(course.id)" class="bg-red-600 py-1 rounded-md px-4">
           delete
         </button>
       </td>
