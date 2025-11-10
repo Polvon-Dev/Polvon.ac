@@ -67,13 +67,7 @@ export class Header implements OnInit {
     } else if (this.users.role == 'admin') {
       this.route.navigate(['/adminDashboard']);
     } else {
-      // this.route.navigate(['/courses']);
     }
-    // this.http.get<any[]>('http://localhost:3000/users').subscribe({
-    //   next: (data: any[]) => {
-    //     this.isUsers = data;
-    //   },
-    // });
   }
 
   private layout = inject(LayoutService);
